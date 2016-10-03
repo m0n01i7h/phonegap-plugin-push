@@ -146,8 +146,9 @@
         }
     } else {
         [[UIApplication sharedApplication] unregisterForRemoteNotifications];
-        [self successWithMessage:@"unregistered"];
     }
+
+    [self successWithMessage:@"unregistered"];
 }
 
 - (void)init:(CDVInvokedUrlCommand*)command;
